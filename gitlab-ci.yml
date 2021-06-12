@@ -1,5 +1,5 @@
-demo_job_1:
+assignment_no_2:
      tags:
        - ci
      script:
-       - echo Hello World
+       - echo Code Intersection
