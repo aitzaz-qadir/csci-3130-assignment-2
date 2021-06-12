@@ -1,5 +1,6 @@
 assignment_no_2:
      tags:
        - ci
+       - ssh
      script:
        - echo Code Intersection
