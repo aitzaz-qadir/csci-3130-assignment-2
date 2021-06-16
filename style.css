@@ -3,15 +3,16 @@
 
 /* CSS Styling for Main Webpage. */
 * {
-	background-color: #D5DCE4;
+	/* Transistions added to make circle movement fluid. */
 	transition-duration: 0.15s;
+	background-color: #D5DCE4;
 }
 
 body {
 	width : 88vw;
 	margin: auto;
-	padding: 5vw 0 5vw 0;
 	display: flex;
+	padding: 5vw 0 5vw 0;
 	flex-direction: column;
 }
 
@@ -24,47 +25,47 @@ body {
 
 /* CSS Style for 3 circles with mix-blend-mode for intersection color. */
 .circle-1 {
+	z-index: 1;
 	width:250px;
 	height:250px;
-	background:red;
-	border-radius:50%;
 	flex-shrink: 0;
 	overflow: visible;
-	position: absolute;
 	margin-right: 35%;
-	z-index: 1;
-	mix-blend-mode: overlay;
+	border-radius:50%;
+	position: absolute;
+	mix-blend-mode: inherit;
+	background:rgba(255, 0, 0, 0.5); 
 }
 
 .circle-2 {
+	z-index: 0;
 	width:250px;
 	height:250px;
-	background:#FFFF01;
-	border-radius:50%;
 	flex-shrink: 0;
-	overflow: visible;
 	margin-left: 35%;
-	z-index: 0;
+	border-radius:50%;
+	overflow: visible;
+	background:#FDFE02;
 }
 
 #transparent {
+	z-index: 0;
 	width:250px;
 	height:250px;
-	background:#FD0000;
-	border-radius:50%;
+	opacity: 0.5;
 	flex-shrink: 0;
+	margin-right: 35%;
+	border-radius:50%;
 	overflow: visible;
 	position: absolute;
-	margin-right: 35%;
-	opacity: 0.5;
-	z-index: 2;
+	background:#FD0000;
 }
 
 footer {
 	display: flex;
+	padding-top: 2%;
 	flex-direction: row;
 	justify-content:space-evenly;
-	padding-top: 2%;
 }
 
 p {
@@ -85,24 +86,24 @@ p {
 button {
 	border: none;
 	padding: 20px;
+	margin-top: 5%;
 	font-size: 16px;
 	color: #CED9DD;
 	font-weight: bold;
 	align-self: center;
 	border-radius: 8px;
 	background-color: #1F3763;
-	margin-top: 5%;
 }
 
 button:hover {
-	background-color: #2b64df;
 	color: white;
 	cursor: pointer;
+	background-color: #2b64df;
 }
 
 button:active {
-	background-color: #1F3763;
+	opacity: 0;
 	box-shadow: 0 5px #666;
 	transform: translateY(4px);
-	opacity: 0;
+	background-color: #1F3763;
 }

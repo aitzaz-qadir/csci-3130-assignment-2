@@ -13,9 +13,9 @@ var button = document.getElementsByTagName("button");
 // Function for the intersection (triggered by html button).
 function intersect() {
 	// Moving the circles towards each other.
-	circle1[0].style.marginLeft = "25%";
-	circle3.style.marginLeft    = "25%";
-	circle2[0].style.marginRight= "25%";
+	circle1[0].style.marginLeft = "26%";
+	circle3.style.marginLeft    = "26%";
+	circle2[0].style.marginRight= "26%";
 	
 	// Removing one para element.
 	p2.remove();
